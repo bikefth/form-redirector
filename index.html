@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting to Form</title>
+  <script>
+    const dummyEntry = 'entry.999999'; // Match your Apps Script
+    const token = new Date().getTime(); // Unique per load
+    const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfbimf-0E1gRWF4XsgolbrB8lKZmENQUkuhkr6piWU5TFILig/viewform?${dummyEntry}=${token}`;
+    window.location.href = formUrl;
+  </script>
+</head>
+<body>
+  <p>Redirecting to the form...</p>
+</body>
+</html>
